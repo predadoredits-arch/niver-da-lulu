@@ -1,0 +1,157 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Evita barra de rolagem horizontal */
+} 
+
+/* Adicionando um gradiente ao fundo */
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradiente suave para o fundo */
+}
+
+/* Animação do fundo */
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Flip effect - para evitar bugs de rotação */
+.start-screen {
+  perspective: 1000px;
+}
+
+/* Layout geral */
+.App {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Tela de entrada */
+.start-screen {
+  height: 100vh; /* Garante que ocupe a altura total da tela */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Título entrada */
+.title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+
+/* Botão */
+.box-button {
+  cursor: pointer;
+  border: 4px solid black;
+  background-color: gray;
+  padding-bottom: 10px;
+  transition: 0.1s ease-in-out;
+  user-select: none;
+  display: inline-block;
+}
+
+.button {
+  background-color: #dddddd;
+  border:  4px solid #fff;              
+  padding: 2px 3px; /* Ajusta o espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+.button span {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.box-button:active {
+  padding: 10px 20px; /* Mantém o tamanho ao clicar */
+  margin-bottom: 10px;
+  transform: translateY(10px);
+}
+
+.box-button:hover {
+  background-color: #bbbbbb; /* Altera a cor de fundo ao passar o mouse */
+  transform: scale(1.1); /* Adiciona um leve aumento no tamanho */
+}
+
+/* Landing Page */
+.landing {
+  padding: 0,5rem;
+  animation: fadeIn 1s ease forwards;
+}
+
+.section {
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto; /* Substitui margin-inline para compatibilidade */
+  margin-right: auto; /* Substitui margin-inline para compatibilidade */
+  text-align: center;
+}
+
+.section h2 {
+  color: #07b1ef;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Estilo para os GIFs nas laterais */
+.lateral-gifs {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1,5rem;
+}
+
+.lateral-gifs.left {
+  left: 5,3rem; /* Alinha à esquerda */
+}
+
+.lateral-gifs.right {
+  right: 5.3rem; /* Alinha à direita */
+}
+
+.lateral-gifs img {
+  width: 230px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+/* Fade-in-landing */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Adicionando estilo para a classe gif */
+.gif {
+  max-width: 100%;
+  height: 200;
+  display: block;
+  margin: 2 auto; /* Centraliza o GIF horizontalmente */
+}
+
+
+.carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o conteúdo interno */
+}
