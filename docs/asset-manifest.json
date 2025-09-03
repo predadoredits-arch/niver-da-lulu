@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b9c837da.css",
+    "main.js": "/static/js/main.ea57994a.js",
+    "static/media/pocoyo2.gif": "/static/media/pocoyo2.cbca7373acb3b171de9e.gif",
+    "static/media/musica.mp3": "/static/media/musica.1edd0f9722721a8da72e.mp3",
+    "static/media/gato.gif": "/static/media/gato.8a2375e96dd4abd45488.gif",
+    "static/media/pocoyo1.gif": "/static/media/pocoyo1.7f8ce00aca0e85d27cc1.gif",
+    "static/media/sapo.gif": "/static/media/sapo.3dfd13610ead0ba16bd2.gif",
+    "static/media/luffy.gif": "/static/media/luffy.ffb8c1df71d0865b6a13.gif",
+    "index.html": "/index.html",
+    "main.b9c837da.css.map": "/static/css/main.b9c837da.css.map",
+    "main.ea57994a.js.map": "/static/js/main.ea57994a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9c837da.css",
+    "static/js/main.ea57994a.js"
+  ]
+}
